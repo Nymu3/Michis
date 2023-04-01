@@ -1,4 +1,309 @@
-body a{
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500&family=Signika+Negative:wght@300;400&display=swap');
+
+.todo.container{
+    margin: auto;
+    padding: 50px;
+    background-color: rgb(112, 10, 41);
+    font-family: 'Alkatra', cursive;
+    font-family: 'Signika Negative', sans-serif;
+}
+.todo.container a{
+    margin: auto;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 0, 0);
+    list-style: none;
+}
+p{
+    color: aqua;
+}
+.todo.container h4{
+    color: blue;
+}
+.todo.container h1{
+color: rgb(255, 0, 255);
+}
+.todo.container h2{
+    color: rgb(42, 165, 79);
+}
+.menu{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+.navbar{
+    display: flex;
+}
+.menu-1{
+    margin-right: 180px;
+}
+.menu-2{
+    margin-left: 180px;
+    display: flex;
+    align-items: center;
+}
+.logo-1{
+    width: 0;
+    
+}
+.logo-2{
+    width: 150px;
+}
+.social{
+    display: flex;
+    margin: 40px;
+    width: 40px;
+    border: 1px solid rgb(177, 23, 23);
+    border-radius: 50%;
+}
+.social:hover{
+    background-color: rgb(131, 27, 27);
+}
+.social img{
+    margin: 8px 0 0 10px;
+}
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+    font-size: 20px;
+    padding:20px;
+    color: rgb(240, 0, 0);
+    display: block;
+}
+.menu .navbar ul li a:hover{
+    color: red;
+}
+#menu{
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+    background-color: red;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+.header-content{
+    margin-top: 200px;
+    padding-bottom: 50px;
+}
+.slider{
+    display: flex;
+    align-items: center;
+}
+.slider-txt{
+    margin-left: 85px;
+    width: 50%;
+}
+.slider-txt h1{
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.slider-txt p{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+.botones{
+    margin-top: 50px;
+}
+.btn-1{
+    display: inline-block;
+    padding: 15px 35px;
+    border: 2px solid red;
+    color: rgb(255, 255, 255);
+    font-weight: 800px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right:20px ;
+    border-radius: 50px;
+}
+.btn-1:hover{
+    background-color: red;
+}
+.carousel-img{
+    width: 100%;
+}
+.carousel-img img{
+    margin-right: 225px;
+    width: 550px;
+}
+.inicio{
+    background-color: black;
+}
+.sesion{
+    background-color: black;
+}
+.Nosotros{
+    background-color: black;
+}
+.idk2{
+    background-color: black;
+}
+.horario{
+    padding: 100px 0px;
+    background-color: rgb(70, 6, 20);
+}
+.horario-info h2{
+    font-size: 75px;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.horario-txt{
+    display :flex;
+    justify-content: space-between;
+}
+.txt{
+    color: white;
+}
+.txt h4{
+    font-size: 18px;
+    color: whitesmoke;
+    margin-bottom: 30px;
+}
+.txt p{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.map{
+    filter: grayscale(100%) invert(92%) contrast(93%);
+    width: 100%;
+}
+.info-img{
+    width: 100%;
+}
+.info-img img{
+    margin-right: 225px;
+    width: 550px;
+}
+.info.container{
+    display: flex;
+    align-items: center;
+}
+.footer{
+    padding: 100px 0px;
+    display :flex;
+    justify-content: space-between;
+}
+@media(max-width: 1200px) {
+    .menu{
+        padding: 20px;
+        justify-content: space-between;
+    }
+    .menu-2{
+        display: none;
+    }
+    .logo-1{
+        width: 100px;
+    }
+    .logo-2{
+        width: 0;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: black;
+        display: none;
+    }
+    .menu .navbar ul li{
+        width:100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .header-content{
+        padding: 30px;
+        margin-top: 100px;
+    }
+    .slider{
+        flex-direction: column;
+    }
+    .slider-txt{
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .slider-txt h1{
+        font-size: 50px;
+    }
+    .slider-txt p{
+        font-size: 16px;
+    }
+    .btn-1{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    .carousel-img{
+        width: 100%;
+        text-align: center;
+    }
+    .carousel-img img{
+        margin-right: 0;
+        width: 300px;
+    }
+    .info{
+        padding: 30px;
+        flex-direction: column;
+    }
+    .info-img{
+        width: 100%;
+        text-align: center;
+    }
+    .info-img img{
+        width: 400px;
+        height: 200px;
+        margin-bottom: 25px;
+    }
+    .info-txt{
+        width: 100%;
+        text-align: center;
+    }
+    .info-txt h2{
+        font-size: 50px;
+    }
+    .info-txt p{
+        font-size: 16px;
+    }
+    .btn-1{
+        font-size: 16px;
+    }
+    .horario{
+        padding: 30px;
+        text-align: center;
+    }
+    .horario-info h2{
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+    .horario-txt{
+        flex-direction: column;
+    }
+    .social{
+        justify-content: center;
+    }
+    .social img{
+        margin: 8px 0 0 0;
+    }
+    .footer{
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
 }

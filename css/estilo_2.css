@@ -1,0 +1,46 @@
+.container {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #da0000;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #e90000;
+}
+.form-group{
+    display: inline-block;
+    width: 180px;
+    margin-bottom: 10px;
+}
+
+#enviar {
+    background-color: #1518eb;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#enviar:hover {
+    background-color: #45a049;
+}
+
+#showpassword {
+    background-color: #ff0202;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+#showpassword:hover {
+    background-color: #9c0c0c;
+}
+.inicio{
+    background-color: #da0012;
+    text-decoration: none;
+    color: azure;
+}
+.inicio:hover{
+    background-color: aliceblue;
+}
