@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios</title>
+    <link rel="stylesheet" href="css/estilo_4.css">
+</head>
+
+<body>
+    <header>
+        <h1>Michis</h1>
+        <nav>
+            <img src="images/Logo.png" alt="" class="logo-1">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Sesion.html">Inicio de sesion</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="comments">
+            <h2>Comentarios/criticas</h2>
+            <form>
+                <div>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div>
+                    <label for="comment">Comentario:</label>
+                    <textarea id="comment" name="comment"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            <ul id="comment-list">
+                <!-- Aquí se mostrarán los comentarios -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Derechos de autor © 2023 Michis</p>
+    </footer>
+    <script src="js/Foro.js"></script>
+</body>
+
+</html>
