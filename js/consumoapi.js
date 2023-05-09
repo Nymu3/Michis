@@ -1,8 +1,10 @@
+// Aqui inicia las validaciones
 $(document).ready(function () {
   $("#formulario").validate({
     rules: {
       txt_rut: {
         required: true,
+        maxlength:9,
       },
       nombre: {
         required: true,
@@ -10,20 +12,23 @@ $(document).ready(function () {
       },
       celular: {
         required: true,
+        number : true,
         minlength: 8,
+        maxlength:8,
       },
       pablabraMagica: {
         required: true,
         minlength: 5,
-        equal:"palabra magica",
       },
       likek: {
         required: true,
+        maxlength:4,
       },
     },
     messages: {
       txt_rut: {
         required: "Por favor ingresa tu rut",
+        maxlength:"Maximo 9 caracteres",
       },
       nombre: {
         required: "Por favor ingresa nombre",
@@ -34,17 +39,21 @@ $(document).ready(function () {
         required: "Ingresa tu numero de celular",
         minlength:
           "El numero no puede ser menor a 8",
+        number:"Solo se permite caracter tipo numero",
+        maxlength:"Sobrepasa el numero de digitos",
       },
       pablabraMagica:{
         required:"palabra magica",
+        minlength:"Minimo 5 caracteres",
       },
       likek: {
-        required: "Por favor",
+        required: "?????",
+        maxlength:"Maximo 4 Caracteres"
       },
     },
   });
 });
-
+// Aqui se consige la informacion de una api
 $("#webS").click(function (event) {
   event.preventDefault();
   var url = "https://api.kanye.rest/";

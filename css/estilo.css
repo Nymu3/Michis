@@ -38,7 +38,7 @@ color: rgb(255, 0, 255);
     display: flex;
 }
 .menu-1{
-    margin-right: 180px;
+    margin-right: 10px;
 }
 .menu-2{
     margin-left: 180px;
@@ -135,17 +135,11 @@ color: rgb(255, 0, 255);
     margin-right: 225px;
     width: 550px;
 }
-.inicio{
-    background-color: black;
+.inicio,.sesion,.Nosotros,.Foro,.WS{
+    background-color: rgba(0, 0, 0, 0.651);
 }
-.sesion{
-    background-color: black;
-}
-.Nosotros{
-    background-color: black;
-}
-.Foro{
-    background-color: black;
+.inicio:hover,.sesion:hover,.Nosotros:hover,.Foro:hover,.WS:hover{
+    background-color: rgba(240, 248, 255, 0.459);
 }
 .horario{
     padding: 100px 0px;
