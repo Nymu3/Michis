@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css %} <link rel="stylesheet" href="{% static 'css/estilo.css' %}"> {% endblock css %}
+{% block title %}Home Page{% endblock title %}
+
+{% block content %} 
+<div class="header-content container">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slider">
+                    <div class="slider-txt">
+                        <h1>Gato</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum neque unde itaque
+                            veniam est reprehenderit accusamus sed vero magnam velit consequatur quasi enim,
+                            temporibus dolorem minima tempore autem tempora eveniet.</p>
+                        <div class="botones">
+                            <a href="" class="btn-1">Comprar</a>
+                            <a href="" class="btn-1">?</a>
+                        </div>
+                    </div>
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'img/slider1.jpg' %}" class="carousel-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'img/panas.jpg' %}" class="carousel-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'img/xd.jpg' %}" class="carousel-img" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'img/o_0.jpeg' %}" class="carousel-img" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="info container">
+    <div class="info-img">
+        <img src="{% static 'img/infor.jpg' %}" alt="">
+    </div>
+    <div class="info-txt">
+        <h2>Informacion</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, inventore. Modi non ad, ab tempora
+            perferendis iure illo voluptates recusandae corrupti assumenda consectetur doloribus debitis commodi
+            libero asperiores, dolor inventore.</p>
+        <a href="#" class="btn-2">Mas informacion</a>
+    </div>
+</section>
+<section class="horario" id="Horario">
+    <div class="horario-info container">
+        <h2>Horario</h2>
+        <div class="horario-txt">
+            <div class="txt">
+                <h4>Direccion</h4>
+                <p>Mi casa esta en</p>
+                <p>Mi comuna esta en</p>
+            </div>
+            <div class="txt">
+                <h4>Horario</h4>
+                <p>Lunes a viernes: 8:00 hasta 16:00</p>
+                <p>Sabado y domingo: 10:00 hasta 14:00</p>
+            </div>
+            <div class="txt">
+                <h4>Telefono</h4>
+                <p>+56912345678</p>
+                <p>+5623135835</p>
+            </div>
+            <div class="txt">
+                <h4>RRSS</h4>
+                <div>
+                    <i class='bx bxl-instagram'><img src="{% static 'img/instagram.svg' %}" alt="">
+                        <a href="https://www.instagram.com/nymousgod/?igshid=ZDdkNTZiNTM%3D" target="_blank">Mi
+                            insta</a>
+                    </i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <iframe class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106606.07890516715!2d-70.40289495966796!3d-33.38568412435615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2sSantiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1680303438229!5m2!1ses-419!2scl"
+        height="500" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+{% endblock content %}

@@ -1,0 +1,50 @@
+{%extends 'base.html'%}
+
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/paginaapi.css'%}">
+{% endblock %}
+{% block content%}
+    <main>
+        <section id="comments">
+            <h2>Twits random de Kanye</h2>
+            <form id="formulario" method="POST" >
+                <div class="form-group">
+                    <label for="txt_rut" >Rut</label>
+                    <input type="text" name="txt_rut" id="txt_rut" class="form-control required" placeholder="Ingrese rut">                    
+                </div>
+                <div class="form-group">
+                    <label for="nombre" >Nombre</label>
+                    <input type="text" name="nombre" id="nombre" class="form-control required" placeholder="Ingrese Nombre">                    
+                </div>
+                <div class="form-group">
+                    <label for="celular" >Numero de celular</label>
+                    <input type="text" name="celular" id="celular" class="form-control required" placeholder="Ingrese numero de celular">                    
+                </div>
+                <div class="form-group">
+                    <label for="pablabraMagica" >Palabra Magica</label>
+                    <input type="text" name="pablabraMagica" id="pablabraMagica" class="form-control required" placeholder="Ingrese Palabra Magica">                    
+                </div>
+                <div class="form-group">
+                    <label for="likek" >Te gusta Kanye?</label>
+                    <input type="text" name="likek" id="likek" class="form-control required" placeholder="Te gusta Kanye?">                    
+                </div>
+                <br>
+                <button class="btn btn-outline-primary" id="validacion">Ver Validacion</button>
+                <button class="btn btn-outline-primary" id="webS">Cargar Web Service</button>
+                <p>&nbsp;</p>
+                <p class="text-info" id="msgerror"></p>
+                <div id="info" class="text-center">
+                    <p></p>
+                </div>
+            </form>
+        </section>
+    </main>
+    {% block js %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script language="javascript" type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js"></script>
+    <script src="{% static 'js/consumoapi.js' %}" type="text/javascript"></script>
+    {% endblock %}
+{%endblock%}

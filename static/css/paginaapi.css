@@ -1,0 +1,57 @@
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+}
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 1.5rem;
+    margin-bottom: auto;
+    margin-right: 10px;
+}
+
+#validacion {
+    background-color: #ce1697;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: help;
+    transition: all 0.3s ease;
+}
+
+#validacion:hover {
+    background-color: #af0d0d;
+}
+
+#webS{
+    background-color: antiquewhite;
+    color: black;
+    margin-left: 150px;
+    border: none;
+    border-radius: 30px;
+    cursor: progress;
+}
+#webS:hover{
+    background-color: aquamarine;
+}
+
+footer {
+    padding: 20px;
+    background-color: #19db491c;
+    text-align: center;
+}
+.logo-1{
+    width: 300px;
+    margin-right: 200px;
+}
