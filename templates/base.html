@@ -25,32 +25,28 @@
                         <div class="menu-1">
                             <ul class"nav">
                                 <li><a href="{% url 'home' %}" class="inicio">Inicio</a></li>
-                                <li><a href="{% url 'sesion' %}" class="sesion" target="_blank">Sesion</a></li>
-                                <li><a href="{% url 'nosotros' %}" class="Nosotros" target="_blank">Nosotros</a></li>
-                                <li><a href="{% url 'foro' %}" class="Foro" target="_blank">Foro</a></li>
-                                <li><a href="{% url 'paginaapi' %}" class="WS" target="_blank">Web Service</a></li>
+                                <li><a href="{% url 'nosotros' %}" class="Nosotros" >Nosotros</a></li>
+                                <li><a href="{% url 'post' %}" class="Foro" >Foro</a></li>
+                                <li><a href="{% url 'paginaapi' %}" class="WS" >Web Service</a></li>
                                 {% if not user.is_authenticated %}        
-                                <li class="nav-item"><a href="{% url 'registrar' %}">registrarse</a></li>
-                                <li class="nav-item"><a href="{% url 'login' %}">iniciar sesión</a></li>
+                                <li><a href="{% url 'registrar' %}" class="registro">registrarse</a></li>
+                                <li><a href="{% url 'login' %}" class="login">iniciar sesión</a></li>
                                 {% endif %}
                                 {% if user.is_authenticated %}
-                                <li class="nav-item"><a href="{% url 'logout' %}">Cerrar sesión</a></li>
-                                <span class="ml-md-5" style="color: blue;"><strong>Usuario: {{ user.get_username }}</strong></span>
-                                {% endif %}  
-                            </ul>
-                        </div>
-                        <img src="{% static 'img/Logo.png' %}" alt="" class="logo-2">
-                            <div class="menu-2">
-                                <ul>
-                                    <li><a href="#Horario">Horario</a></li>
-                                </ul>
+                                <li class="nav-item"><a href="{% url 'logout' %}" class="logout">Cerrar sesión</a></li>
+                                <span class="ml-md-5" style="color: white;"><strong>Usuario: {{ user.get_username }}</strong></span>
+                                {% endif %}
+                                
                                 <div class="social">
                                     <i class='bx bxl-instagram'><img src="{% static 'img/instagram.svg' %}" alt="">
                                         <a href="https://www.instagram.com/nymousgod/?igshid=ZDdkNTZiNTM%3D" target="_blank">Mi
                                             insta</a>
                                     </i>
                                 </div>
-                            </div>
+                            </ul>
+                            
+                        </div>
+                        <img src="{% static 'img/Logo.png' %}" alt="" class="logo-2">
                         </nav>
                 {% endblock %}
                 </div>

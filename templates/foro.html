@@ -7,8 +7,10 @@
 {% block content%}
     <main>
         <section id="comments">
+            {% if user.is_authenticated %}
             <h2>Comentarios/criticas</h2>
-            <form>
+            <form method="POST" id="post-create-form" action ="{%url 'post'%}"> 
+                {% csrf_token %}
                 <div>
                     <label for="name">Nombre:</label>
                     <input type="text" id="name" name="name">
@@ -16,12 +18,21 @@
                 <div>
                     <label for="comment">Comentario:</label>
                     <textarea id="comment" name="comment"></textarea>
+                    {{form}}
+                <button type="submit" value="Guardar">Enviar</button>
+                {% for post in posts %}
+                    <p>{{ post.nombre }}</p>
+                    <p>{{ post.comentario }}</p>
+                {% endfor %}
                 </div>
-                <button type="submit">Enviar</button>
             </form>
+            
             <ul id="comment-list">
                 <!-- Aquí se mostrarán los comentarios -->
             </ul>
+            {% else %}
+            <li class="nav-item"><a href="{% url 'login' %}">INICIAR SESION PARA INTERACTUAR</a></li>
+            {% endif %}
         </section>
     </main>
     {% block js %}

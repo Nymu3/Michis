@@ -61,11 +61,11 @@ color: rgb(255, 0, 255);
     
 }
 .logo-2{
-    width: 150px;
+    width: 170px;
 }
 .social{
     display: flex;
-    margin: 40px;
+    margin: 0px;
     width: 40px;
     border: 1px solid rgb(177, 23, 23);
     border-radius: 50%;
@@ -146,10 +146,10 @@ color: rgb(255, 0, 255);
     margin-right: 225px;
     width: 550px;
 }
-.inicio,.sesion,.Nosotros,.Foro,.WS{
+.inicio,.sesion,.Nosotros,.Foro,.WS,.registro,.login,.HD,.logout{
     background-color: rgba(0, 0, 0, 0.651);
 }
-.inicio:hover,.sesion:hover,.Nosotros:hover,.Foro:hover,.WS:hover{
+.inicio:hover,.sesion:hover,.Nosotros:hover,.Foro:hover,.WS:hover,.registro:hover,.login:hover,.HD:hover,.logout:hover{
     background-color: rgba(240, 248, 255, 0.459);
 }
 .horario{
